@@ -79,7 +79,7 @@ export default function SignIn() {
     <div className="flex items-center lg:p-5 bg-[#F8F4F0] min-h-screen">
       <div>
         <Image
-          src={"/sidebar.svg"}
+          src={"/Sidebar.svg"}
           alt="image"
           height={100}
           width={100}
