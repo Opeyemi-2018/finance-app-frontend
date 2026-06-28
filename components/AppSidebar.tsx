@@ -44,16 +44,16 @@ const items = [
     url: "/budgets",
     icon: Blend,
   },
-  {
-    title: "Pots",
-    url: "/pots",
-    icon: BadgeDollarSign,
-  },
-  {
-    title: "Recurring Bills",
-    url: "/recurring-bills",
-    icon: BanknoteArrowDown,
-  },
+  // {
+  //   title: "Pots",
+  //   url: "/pots",
+  //   icon: BadgeDollarSign,
+  // },
+  // {
+  //   title: "Recurring Bills",
+  //   url: "/recurring-bills",
+  //   icon: BanknoteArrowDown,
+  // },
 ];
 
 export function AppSidebar() {

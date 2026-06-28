@@ -523,25 +523,25 @@ const BudgetsSection = () => {
     </div>
   );
 };
-const RecurringBillsSection = () => (
-  <div className="bg-white rounded-2xl p-6 shadow-sm">
-    <SectionHeader title="Recurring Bills" href="recurring-bills" />
-    <div className="flex flex-col gap-3">
-      {recurringBills.map((bill) => (
-        <div
-          key={bill.label}
-          className="flex items-center justify-between bg-[#F8F4EF] rounded-xl px-4 py-3"
-          style={{ borderLeft: `4px solid ${bill.accent}` }}
-        >
-          <span className="text-sm text-[#696868]">{bill.label}</span>
-          <span className="font-bold text-sm text-[#201F24]">
-            ${bill.amount.toFixed(2)}
-          </span>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+// const RecurringBillsSection = () => (
+//   <div className="bg-white rounded-2xl p-6 shadow-sm">
+//     <SectionHeader title="Recurring Bills" href="recurring-bills" />
+//     <div className="flex flex-col gap-3">
+//       {recurringBills.map((bill) => (
+//         <div
+//           key={bill.label}
+//           className="flex items-center justify-between bg-[#F8F4EF] rounded-xl px-4 py-3"
+//           style={{ borderLeft: `4px solid ${bill.accent}` }}
+//         >
+//           <span className="text-sm text-[#696868]">{bill.label}</span>
+//           <span className="font-bold text-sm text-[#201F24]">
+//             ${bill.amount.toFixed(2)}
+//           </span>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// );
 
 const Overview = () => {
   const { user } = useAuth();
@@ -581,7 +581,7 @@ const Overview = () => {
         {/* Right column */}
         <div className="flex flex-col gap-5 w-full md:w-[360px] shrink-0">
           <BudgetsSection />
-          <RecurringBillsSection />
+          {/* <RecurringBillsSection /> */}
         </div>
       </div>
     </div>

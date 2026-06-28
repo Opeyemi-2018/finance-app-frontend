@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
-// Use API_URL for server-side — more secure
-// Falls back to NEXT_PUBLIC_API_URL if API_URL not set
+
 const BASE_URL = process.env.API_URL || process.env.NEXT_PUBLIC_API_URL;
 
 async function handler(
